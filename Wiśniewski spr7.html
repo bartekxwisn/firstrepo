@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bartek Wiśniewski spr zad 7</title>
+    <script>
+        function show() {
+            let ocena1 = document.getElementById('ocena1').value;
+            let waga1 = document.getElementById('waga1').value;
+            let ocena2 = document.getElementById('ocena2').value;
+            let waga2 = document.getElementById('waga2').value;
+            let ocena3 = document.getElementById('ocena3').value;
+            let waga3 = document.getElementById('waga3').value;
+            let ocena4 = document.getElementById('ocena4').value;
+            let waga4 = document.getElementById('waga4').value;
+            let ocena5 = document.getElementById('ocena5').value;
+            let waga5 = document.getElementById('waga5').value;
+            var ow = [ocena1,ocena2,ocena3,ocena4,ocena5, waga1,waga2,waga3,waga4,waga5];
+            var w = ow[5]+ow[6]+ow[7]+ow[8]+ow[9];
+            var srednia = (ow[0]*ow[5] + ow[1]*ow[6] + ow[2]*ow[7] + ow[3]*ow[8] + ow[4]*ow[9])/w;
+            alert('srednia wazona: ' + srednia);
+        }
+    </script>
+</head>
+<body>
+
+    <input type="form" input="test1" placeholder="pierwsza ocena" id="ocena1">
+    <br>
+    <input type="form" input="test2" placeholder="waga pierwsza" id="waga1">
+    <br>
+    <br>
+    <input type="form" input="test3" placeholder="druga ocena" id="ocena2">
+    <br>
+    <input type="form" input="test4" placeholder="waga druga" id="waga2">
+    <br>
+    <br>
+    <input type="form" input="test5" placeholder="trzecia ocena" id="ocena3">
+    <br>
+    <input type="form" input="test6" placeholder="waga trzecia" id="waga3">
+    <br>
+    <br>
+    <input type="form" input="test7" placeholder="czwarta ocena" id="ocena4">
+    <br>
+    <input type="form" input="test8" placeholder="waga czwarta" id="waga4">
+    <br>
+    <br>
+    <input type="form" input="test9" placeholder="piata ocena" id="ocena5">
+    <br>
+    <input type="form" input="test10" placeholder="waga piata" id="waga5">
+    <br>
+    <br>
+    <br>
+    <input type="button" onclick="show()" value="obliczam wage">
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zadanie</title>
+  </head>
+  <body>
+    <input type="number" placeholder="Podaj D" id="D">
+    <input type="number" placeholder="Podaj X" id="X"> <br>
+    <input type="number" placeholder="Drabina" id="Drabina">
+    <input type="number" placeholder="Alfa" id="Alfa">
+    <button type="button" onclick="getInputValue();">Get Value</button>
+    
+    <script>
+      function getInputValue() {
+        // Selecting the input element and get its value 
+        let inputVal = document.getElementById("D").value;
+        let inputVal_1 = document.getElementById("X").value;
+        // Displaying the value
+        alert(inputVal);
+      }
+    </script>
+  </body>
+</html>

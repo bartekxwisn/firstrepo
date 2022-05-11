@@ -1,0 +1,56 @@
+<html>
+    <head>
+    <script language="JavaScript">
+
+function testResults (form) 
+         {
+             var K_podstawa = parseFloat(form.K_podstawa.value);
+             var D_podstawa = parseFloat(form.D_podstawa.value);
+             var wysokosc =  parseFloat(form.wysokosc.value);
+           
+ 
+            var pole=a+b*h;
+            var pole=pole/2;
+                
+                
+             alert("Srednia ważona tych ocen:"+pole);
+
+
+
+            return pole;
+         } 
+
+
+function Pole_xd()
+{
+    
+    document.write("<div style=color:green;font-size:52>Pole trazpezu="+testResults()+"<br></div>");
+}
+
+function Obwod_xd()
+{
+   
+
+    var obw=2*a+2*b;
+    document.write("<div style=color:green;font-size:52>Obwód trazpezu="+obw+"<br></div>");
+
+
+}
+
+ </script>
+ </head>
+ <body>
+    <FORM NAME="myform" ACTION="" METHOD="GET">Podaj krótszą podstawe:
+        <INPUT TYPE="number" NAME="K_podstawa" VALUE=""><br>Podaj dłuższą podstawe:
+        <INPUT TYPE="number" NAME="D_podstawa" VALUE=""><br>Podaj wysokość:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <INPUT TYPE="number" NAME="wysokosc" VALUE=""><br>
+
+        <INPUT TYPE="button" NAME="button" VALUE="Zapisz" onClick="testResults(this.form)">
+        <input TYPE="reset" VALUE="Reset">    
+
+        
+    <input type="button" onclick="Pole_xd()" value="Pole" />  
+    <input type="button" onclick="Obwod_xd()" value="Obwód" />  
+    
+</body>
+</html>

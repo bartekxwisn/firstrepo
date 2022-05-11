@@ -1,0 +1,48 @@
+<html>
+    <head>
+    <script language="JavaScript">
+
+function testResults (form) 
+         {
+             var K_podstawa = parseFloat(form.D.value);
+             var D_podstawa = parseFloat(form.X.value);
+             var Drabina =  parseFloat(form.Drabina.value);
+             var Alfa =  parseFloat(form.Alfa.value);
+           
+            document.forms['drabina'].imie.value = '12';
+            var input = document.getElementsByName("drabina")[0].value;
+                
+            alert(+D_podstawa);
+             
+
+
+
+            return pole;
+         } 
+
+
+function Pole_xd()
+{
+    
+    document.write("<div style=color:green;font-size:52>Pole trazpezu="+testResults()+"<br></div>");
+}
+
+
+ </script>
+ </head>
+ <body>
+    <FORM NAME="myform" ACTION="" METHOD="GET">Podaj d=
+        <INPUT TYPE="number" NAME="D" VALUE="0"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Podaj x= 
+        <INPUT TYPE="number" NAME="X" VALUE="0"><br><br>  
+        <INPUT TYPE="button" NAME="button" VALUE="Oblicz" onClick="testResults(this.form)">
+          
+
+        <br><br>
+        Drabina=
+        <INPUT TYPE="number" NAME="Drabina" VALUE="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Alfa=
+        <INPUT TYPE="number" NAME="Alfa" VALUE=""><br>
+
+           
+    
+</body>
+</html>

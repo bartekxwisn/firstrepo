@@ -1,0 +1,40 @@
+<html>
+    <head>
+    <script language="JavaScript">
+
+    var a_wit=prompt("Podaj podstawe prostokąta: ","");
+    var b_wit=prompt("Podaj wysokość prostokąta:","");
+ 
+    var a=parseFloat(a_wit);
+    var b=parseFloat(b_wit);  
+     
+
+function Pole_xd()
+{
+  
+
+    var pole=a*b;
+    document.write("<div style=color:green;font-size:52>Pole prostokąta="+pole+"<br></div>");
+
+
+}
+
+function Obwod_xd()
+{
+   
+
+    var obw=2*a+2*b;
+    document.write("<div style=color:green;font-size:52>Obwód prostokąta="+obw+"<br></div>");
+
+
+}
+
+ </script>
+ </head>
+ <body>
+    
+    <input type="button" onclick="Pole_xd()" value="Pole" />  
+    <input type="button" onclick="Obwod_xd()" value="Obwód" />  
+    
+</body>
+</html>

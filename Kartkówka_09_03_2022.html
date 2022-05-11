@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <h1>Macierza 2x2</h1>
+    <input type="number" placeholder="Podaj liczbe:" id="1">
+    <input type="number" placeholder="Podaj liczbe:" id="2"> <br>
+    <input type="number" placeholder="Podaj liczbe:" id="3">
+    <input type="number" placeholder="Podaj liczbe:" id="4">
+    
+    <h1>Macierza 3x3</h1>
+    <input type="number" placeholder="Podaj liczbe:" id="V1">
+    <input type="number" placeholder="Podaj liczbe:" id="V2"> 
+    <input type="number" placeholder="Podaj liczbe:" id="V3"> <br>
+    <input type="number" placeholder="Podaj liczbe:" id="V4">
+    <input type="number" placeholder="Podaj liczbe:" id="V5">
+    <input type="number" placeholder="Podaj liczbe:" id="V6"> <br>
+    <input type="number" placeholder="Podaj liczbe:" id="V7">
+    <input type="number" placeholder="Podaj liczbe:" id="V8">
+    <input type="number" placeholder="Podaj liczbe:" id="V9"> <br>
+
+    <button type="button" onclick="getInputValue();">Oblicz</button>
+
+      <script>
+      function getInputValue() 
+      {
+        let inputVal_1 = document.getElementById("1").value;
+        let inputVal_2 = document.getElementById("2").value;
+        let inputVal_3 = document.getElementById("3").value;
+        let inputVal_4 = document.getElementById("4").value;
+
+        let licz_1 = document.getElementById("V1").value;
+        let licz_2 = document.getElementById("V2").value;
+        let licz_3 = document.getElementById("V3").value;
+        let licz_4 = document.getElementById("V4").value;
+        let licz_5 = document.getElementById("V5").value;
+        let licz_6 = document.getElementById("V6").value;
+        let licz_7 = document.getElementById("V7").value;
+        let licz_8 = document.getElementById("V8").value;
+        let licz_9 = document.getElementById("V9").value;
+
+        Val1=inputVal_1*inputVal_4;
+        Val2=inputVal_2*inputVal_3;
+        inputVal=Val1-Val2;
+
+        Val3=licz_1*licz_5*licz_9;
+        Val4=licz_2*licz_6*licz_7;
+        Val5=licz_3*licz_4*licz_8;
+
+        Val6=licz_3*licz_5*licz_7;
+        Val7=licz_1*licz_6*licz_8;
+        Val8=licz_2*licz_4*licz_9;
+
+        Czesc_1=Val3+Val4+Val5;
+        Czesc_2=Val6+Val7+Val8;
+        Wynik=Czesc_1-Czesc_2;
+
+        document.write("<div style=color:red;font-size:30>Macierza 2x2= ("+inputVal_1+" * "+inputVal_3+") - ("+inputVal_2+" * "+inputVal_4+") = "+inputVal+"</div>");
+        document.write("<div style=color:orange;font-size:30>Macierza 3x3= ("+licz_1+"*"+licz_5+"*"+licz_9+" + "+licz_2+"*"+licz_6+"*"+licz_7+" + "+licz_3+"*"+licz_4+"*"+licz_8+") - ("+licz_3+"*"+licz_5+"*"+licz_7+" + "+licz_1+"*"+licz_6+"*"+licz_8+" + "+licz_2+"*"+licz_4+"*"+licz_9+") = "+Czesc_1+" - "+Czesc_2+" = "+Wynik+" <br> </div>");
+      }
+
+      
+      
+    </script>
+  </body>
+    
+    
+  
+  
+</html>

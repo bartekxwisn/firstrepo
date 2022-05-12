@@ -1,0 +1,35 @@
+<html>
+    <head>
+    </head>
+    <body>
+    
+        <script type="text/javascript">
+    var wis_x1 = prompt("podaj liczbę x1:", "1");
+    var wis_x2 = prompt("podaj liczbę x2:", "2");
+
+    var x1 = parseFloat(wis_x1);
+    var x2 = parseFloat(wis_x2);
+
+    document.write("x1: "+x1+"<br>");
+    document.write("x2: "+x2+"<br><br>");
+
+    var y1 = 3 * Math.pow(x1, (7 / (7 + 2)));
+    
+    var y2 = (2 * Math.cos(x1 * Math.PI / 180)) + (2 * Math.sin(x1 * Math.PI / 180));
+    
+    var y3 = Math.cbrt(Math.pow(x1,5) + (2 * Math.pow(x2, 4)));  
+    
+    var y4 = Math.abs(x1 - x2);
+    
+    var y5 = y3 * y4;
+
+    document.write("y1: "+y1+"<br>");
+    document.write("y2: "+y2+"<br>");
+    document.write("y3: "+y3+"<br>");
+    document.write("y4: "+y4+"<br><br>");
+
+    document.write("Wynik: "+y5+"");
+
+        </script>
+    </body>
+</html>

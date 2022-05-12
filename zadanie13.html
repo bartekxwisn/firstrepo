@@ -1,0 +1,26 @@
+<html>
+    <body>
+            
+             <script lang="JavaScript">
+                
+                var a1_wis=prompt("Podaj pierwszą liczbe A=","");
+                var a2_wis=prompt("Podaj drugą liczbę B=","");
+                  var suma;
+
+                var a=parseFloat(a1_wis);
+                var b=parseFloat(a2_wis);
+                 document.write("LICZBY WCZYTANE: A= "+a+" B= "+b+"<br><br>");
+                 document.write("WZOR: ("+a+" + "+b+")^3= "+a+"^3 + (3(("+a+")^2)*("+b+")) + 3("+a+")*(("+b+")^2) + "+b+"^3 <br><br>");
+
+                var w1= a * a * a;
+                var w2= 3 * (a * a) * b;
+                var w3= 3 * a * (b * b);
+                var w4= b * b * b;
+                var suma=w1+w2+w3+w4;
+                document.write("wynik: "+suma+"");
+
+
+            </script>
+            </div>
+    </body>
+</html>
